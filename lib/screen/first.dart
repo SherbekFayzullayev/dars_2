@@ -8,6 +8,7 @@ class FirstPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           'Sign up',
           style: TextStyle(
@@ -51,15 +52,15 @@ class FirstPage extends StatelessWidget {
                 width: 170,
                 child: TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    filled: true,
-                    hintStyle:
-                        TextStyle(color: Color.fromARGB(255, 201, 187, 187)),
-                    hintText: "Name",
-                    fillColor: Colors.white70,
-                  ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      filled: true,
+                      hintStyle:
+                          TextStyle(color: Color.fromARGB(255, 201, 187, 187)),
+                      hintText: "Name",
+                      fillColor: Colors.white70,
+                      suffixIcon: Icon(Icons.person)),
                 )),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

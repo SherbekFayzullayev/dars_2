@@ -29,6 +29,7 @@ class SecondPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.yellow,
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           'Sign up',
           textAlign: TextAlign.center,
@@ -66,7 +67,7 @@ class SecondPage extends StatelessWidget {
                 ),
                 margin: EdgeInsets.all(10),
                 height: 50,
-                width: 100,
+                width: 200,
                 child: TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -77,6 +78,7 @@ class SecondPage extends StatelessWidget {
                         color: const Color.fromARGB(255, 228, 220, 220)),
                     hintText: "Skills",
                     fillColor: Colors.white70,
+                    suffixIcon: Icon(Icons.expand_more),
                   ),
                 )),
             Row(
@@ -164,6 +166,7 @@ class THirdPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           'Sign up',
           style: TextStyle(
@@ -206,15 +209,15 @@ class THirdPage extends StatelessWidget {
               width: 200,
               child: TextField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  filled: true,
-                  hintStyle:
-                      TextStyle(color: Color.fromARGB(255, 209, 199, 199)),
-                  hintText: "Day/Month/Year",
-                  fillColor: Colors.white70,
-                ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    filled: true,
+                    hintStyle:
+                        TextStyle(color: Color.fromARGB(255, 209, 199, 199)),
+                    hintText: "Day/Month/Year",
+                    fillColor: Colors.white70,
+                    suffixIcon: Icon(Icons.table_chart)),
               ),
             ),
             Row(
